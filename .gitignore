@@ -1,0 +1,43 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/backend/node_modules
+/ng-17/dist
+/ng-17/tmp
+/ng-17/out-tsc
+/ng-17/bazel-out
+
+# Node
+/ng-17/node_modules
+ng-17/npm-debug.log
+ng-17/yarn-error.log
+
+# IDEs and editors
+ng-17/.idea/
+ng-17/.project
+ng-17/.classpath
+ng-17/.c9/
+ng-17/*.launch
+ng-17/.settings/
+ng-17/*.sublime-workspace
+
+# Visual Studio Code
+ng-17/.vscode/*
+ng-17/!.vscode/settings.json
+ng-17/!.vscode/tasks.json
+ng-17/!.vscode/launch.json
+ng-17/!.vscode/extensions.json
+ng-17/.history/*
+
+# Miscellaneous
+/ng-17/.angular/cache
+/ng-17/.sass-cache/
+/ng-17/connect.lock
+/ng-17/coverage
+/ng-17/libpeerconnection.log
+/ng-17testem.log
+/ng-17/typings
+
+# System files
+ng-17/.DS_Store
+ng-17/Thumbs.db
