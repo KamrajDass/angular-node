@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(
   session({
     name: "session-id",
-    secret: "12345-67890-09876-54321", // Replace with a secure key
+    secret: "12345-67890-09876-54321", // Replace with a secure  key
     saveUninitialized: false,
     resave: false,
     store: new FileStore({}), // FileStore options can be customized here

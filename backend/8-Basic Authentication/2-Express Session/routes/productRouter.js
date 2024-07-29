@@ -5,7 +5,7 @@ const Product = require("../models/products");
 // Middleware to parse JSON bodies
 productRouter.use(bodyParser.json());
 
-// Route to handle operations on all products
+// Route to handle  operations  on all productss
 productRouter
   .route("/")
   .get(async (req, res) => {
