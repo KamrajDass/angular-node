@@ -1,0 +1,15 @@
+{
+  "name": "mongoose-db-operations",
+  "version": "1.0.0",
+  "description": "Mongoose with MongoDB Operations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamraj Dass",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.5.1"
+  }
+}

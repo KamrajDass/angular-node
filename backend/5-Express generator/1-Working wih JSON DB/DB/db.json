@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Apple Watch 1",
+    "description": "Apple Watch description 1"
+  },
+  {
+    "id": 2,
+    "name": "Apple Watch 2",
+    "description": "Apple Watch description 2"
+  }
+]

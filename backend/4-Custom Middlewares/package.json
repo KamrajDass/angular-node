@@ -1,0 +1,17 @@
+{
+  "name": "express-router",
+  "version": "1.0.0",
+  "description": "Express Express Router for REST API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kamraj Dass",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
