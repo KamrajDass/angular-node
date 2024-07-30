@@ -23,7 +23,6 @@ router.post("/signup", async (req, res, next) => {
     if (err) {
       return res.status(500).json({ success: false, message: err.message });
     }
-
     passport.authenticate("local")(req, res, () => {
       var token = authenticate.getToken({ _id: user._id });
       res.status(200).json({

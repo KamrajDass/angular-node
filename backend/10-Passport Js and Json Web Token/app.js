@@ -11,7 +11,10 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var productRouter = require("./routes/productRouter");
 const config = require("./config");
+<<<<<<< HEAD
 const publishRouter = require("./routes/publish");
+=======
+>>>>>>> 8eb60fc8f595080a160f41c3071770d36f5a75e3
 var app = express();
 // Connect to MongoDB
 const url = config.mongoUrl;
@@ -48,7 +51,10 @@ app.use("/users", usersRouter);
 
 // Use the products router for routes starting with '/products'
 app.use("/products", productRouter);
+<<<<<<< HEAD
 app.use("/send-notification", publishRouter);
+=======
+>>>>>>> 8eb60fc8f595080a160f41c3071770d36f5a75e3
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
