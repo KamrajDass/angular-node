@@ -1,0 +1,154 @@
+<header>
+    <nav class="navbar h-100 mb-3 mb-lg-0">
+        <div class="container px-xxl-5 d-block d-lg-flex flex-nowrap mx-0 mx-sm-auto">
+            <div class="navbar-left d-flex py-2">
+                <button class="navbar-toggler border-0 my-lg-auto px-1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="card border-0 py-2">
+                    <img src="https://motta.uix.store/electronic/wp-content/themes/motta/images/logo.svg" alt=""
+                        class="ms-2 d-block d-lg-none img-fluid h-100 w-100">
+                </div>
+                <ul class="d-flex d-lg-none align-items-center m-0 ms-auto ps-0">
+                    <li class="mx-3"><img
+                            src="https://motta.uix.store/electronic/wp-content/themes/motta-child/images/flags/en.svg"
+                            alt=""></li>
+                    <li><i class="bi bi-cart"></i></li>
+                </ul>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="inside-nav d-block d-lg-flex w-100">
+                <img src="https://motta.uix.store/electronic/wp-content/themes/motta/images/logo.svg" alt=""
+                    class="mx-3 d-none d-lg-block">
+                <div class="search-bar d-flex rounded-pill w-100 py-2 px-3 me-xl-5 ms-lg-3">
+                    <div class="row w-100 flex-nowrap">
+                        <div class="col-2 pe-0 border-end d-none d-lg-block">
+                            <div class="btn d-flex border-0 text-secondary fw-bold">All <i
+                                    class="bi bi-chevron-down ms-3"></i>
+                            </div>
+                        </div>
+                        <div class="col-9 ps-0">
+                            <input type="text" class="form-control border-0 fw-bold" placeholder="Search for anything">
+                        </div>
+                        <div class="col-1 ps-lg-auto ms-auto">
+                            <div class="btn border-0 px-auto"><i class="bi bi-search"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-links d-none d-lg-block">
+                <ul class="d-flex p-0 my-auto ms-lg-3 pt-3">
+                    <li class="m-2  text-center dropdown">
+                        <!-- <h6><button class="text-size" class="btn dropdown-toggle text-size" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Account</button></h6> -->
+                        <button
+                            class="btn dropdown-toggle d-flex flex-column justify-content-center align-items-center p-0"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-fill"></i>
+                            <span>Account</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="login">Login</a></li>
+                            <li><a class="dropdown-item" routerLink="singup">Singup</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="m-2  text-center">
+                        <i class="bi bi-shuffle"></i>
+                        <h6><span class="text-size">Compare</span></h6>
+                    </li>
+                    <li class="m-2  text-center">
+                        <i class="bi bi-heart"></i>
+                        <h6><span class="text-size">Wishlist</span></h6>
+                    </li>
+                    <li class="m-2 text-center">
+                        <i class="bi bi-cart"></i>
+                        <h6><span class="text-size">My Cart</span></h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-items border border-end-0 border-start-0">
+        <div class="container h-100 d-flex justify-content-between">
+            <div class="header-left-items h-100 overflow-hidden">
+                <ul class="d-flex mb-0 h-100 align-items-center ps-0 ps-lg-4">
+                    <li class="d-flex mx-2">
+                        <i class="bi bi-fire me-1"></i>
+                        <h6 class="mb-0"><span class="text-size fw-bold">Hot Deals</span></h6>
+                    </li>
+                    <li class="d-flex mx-2">
+                        <i class="bi bi-star-half me-1"></i>
+                        <h6 class="mb-0"><span class="text-size fw-bold">What’s New</span></h6>
+                    </li>
+                    <li class="d-flex mx-2">
+                        <i class="bi bi-rocket-takeoff me-1"></i>
+                        <h6 class="mb-0"><span class="text-size fw-bold">Daily Deals</span></h6>
+                    </li>
+                    <li class="d-flex mx-2">
+                        <i class="bi bi-truck me-1"></i>
+                        <h6 class="mb-0"><span class="text-size fw-bold">Best Sellers</span></h6>
+                    </li>
+                    <li class="d-flex mx-2">
+                        <i class="bi bi-percent me-1"></i>
+                        <h6 class="mb-0"><span class="text-size fw-bold">Clearance</span></h6>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-rigth-items h-100 d-none d-lg-block">
+                <ul class="d-flex mb-0 h-100 align-items-center pe-xxl-4">
+                    <li class="d-flex mx-2">
+                        <h6 class="mb-0"><span class="text-size">Browsing History</span></h6>
+                        <i class="bi bi-chevron-down ms-2"></i>
+                    </li>
+                    <li class="d-flex mx-2">
+                        <h6 class="mb-0"><span class="text-size">Track Order</span></h6>
+                    </li>
+                    <li class="d-flex mx-2">
+                        <h6 class="mb-0"><span class="text-size">Help Center</span></h6>
+                    </li>
+                    <li class="d-flex mx-2">
+                        <img src="https://motta.uix.store/electronic/wp-content/themes/motta-child/images/flags/en.svg"
+                            alt="">
+                        <h6 class="mb-0 ms-2"><span class="text-size">EN/USD</span></h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

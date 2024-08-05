@@ -1,6 +1,25 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
+const CommentSchema = new Schema(
+  {
+    rating: {
+      type: Number,
+      min: 1,
+      max: 5,
+    },
+    comment: {
+      type: String,
+    },
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 const productSchema = new Schema(
   {
     name: {
@@ -12,29 +31,14 @@ const productSchema = new Schema(
       type: String,
       required: true,
     },
-    comments: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }],
-  },
-  {
-    timestamps: true,
-  }
-);
-
-const commentSchema = new Schema(
-  {
-    rating: {
-      type: Number,
-      min: 1,
-      max: 5,
-      default: 1,
+    image: {
+      type: String,
     },
-    comment: {
+    category: {
       type: String,
       required: true,
     },
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-    },
+    comments: [CommentSchema],
   },
   {
     timestamps: true,
@@ -42,6 +46,4 @@ const commentSchema = new Schema(
 );
 
 const Products = mongoose.model("Product", productSchema);
-const Comments = mongoose.model("Comment", commentSchema);
 module.exports = Products;
-module.exports = Comments;

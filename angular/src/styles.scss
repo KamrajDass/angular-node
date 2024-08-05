@@ -1,1 +1,1054 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: transparent;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(13, 110, 253, 0.25);
+}
+header {
+  width: 100%;
+  height: 100%;
+}
+.search-bar {
+  background-color: #ecf0f4;
+}
+.search-bar input {
+  background-color: #ecf0f4;
+}
+body ul {
+  list-style-type: none;
+}
+.text-size {
+  font-size: 13px;
+}
+body li {
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+.header-items {
+  height: 40px;
+}
+.header-items ul li:hover {
+  border-bottom: 2px solid black;
+  height: 100%;
+  padding-top: 7px;
+}
+ul li img {
+  width: 16px;
+}
+.elemonter-section .elemonter-item {
+  height: 60px;
+}
+.elemonter-section .elemonter-item .text-area {
+  font-size: 11px;
+}
+.elemonter-section .elemonter-item .text-area h6 {
+  font-size: 11px;
+}
+.item-1 a {
+  text-decoration: none;
+  color: #d1005e;
+}
+.item-2 a {
+  text-decoration: none;
+  color: blue;
+}
+.item-3 a {
+  text-decoration: none;
+  color: black;
+}
+.eletoric-item ul li {
+  color: rgb(104, 104, 104);
+}
+.eletoric-item ul li:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.main-section .img-about {
+  max-height: 562px;
+}
+.carousel-caption .col-md-4 {
+  padding-top: 20%;
+}
+.carousel-caption .col-md-4 .h3 {
+  text-wrap: nowrap;
+}
+section .btn-2 {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+body .btn-1 {
+  width: 120px;
+  height: 40px;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+  top: 50%;
+  text-align: center;
+  padding-top: 13px;
+  box-shadow: 0 2px 6px 0 rgba(29, 33, 40, 0.16);
+}
+.student-deal-section .circle-1 {
+  background-color: #dadfe3;
+  right: 95%;
+}
+.student-deal-section .circle-2 {
+  background-color: white;
+  left: 95%;
+}
+.student-deal .h3 {
+  color: #761bcc;
+  font-weight: 700;
+  transform: rotate(350deg);
+}
+section .img-item {
+  width: 100%;
+  height: 23vh;
+  background-size: cover;
+  background-position: center;
+}
+section .img-item-1 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-56.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-2 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-2.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-3 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-6-1.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-4 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-10.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-5 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-15.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-1:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-46.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-2:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-3.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-3:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-6-1.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-4:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-4.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-6 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1.jpeg?resize=300%2C300&ssl=1);
+}
+.img-item-6:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2.jpeg?resize=300%2C300&ssl=1);
+}
+.student-deal-section .h6 {
+  font-size: 13px;
+}
+.card .logo-sale {
+  width: 50px;
+  height: 25px;
+  font-size: 14px;
+}
+.card .logo-1 {
+  background-color: #ff7316;
+}
+.card .logo-2 {
+  background-color: #ff311c;
+}
+.card-body .item-flex img {
+  width: 20px;
+  height: 20px;
+}
+.card .img-overlay {
+  position: relative;
+  display: inline-block;
+}
+.card .img-item {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.img-overlay:hover .overlay {
+  opacity: 1;
+}
+.overlay ul {
+  position: absolute;
+  font-size: 20px;
+  transform: translateY(20px);
+  height: 43vh;
+  width: 100%;
+  padding-top: 0%;
+  padding-left: 60%;
+}
+.overlay .btn-1 {
+  top: 90%;
+  width: 100%;
+  position: absolute;
+}
+.overlaybottom {
+  width: 100%;
+  height: 26vh;
+  bottom: 0px;
+  left: 0px;
+}
+.overlay ul li a {
+  color: gray;
+}
+.overlay ul li a:hover {
+  color: black;
+}
+section .img-item-7 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-74.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-8 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-41.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-9 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-7-1.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-10 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-79.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-11 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-11.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-12 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1.jpeg?resize=300%2C300&ssl=1);
+}
+.img-item-7:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-64.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-8:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-34.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-9:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-7-1.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-10:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-69.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-12:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2.jpeg?resize=300%2C300&ssl=1);
+}
+.labor-deal .labor {
+  font-weight: 700;
+  width: 80%;
+  background-color: rgb(0, 0, 255);
+}
+.labor-deal .sale-deal {
+  font-weight: 700;
+  width: 50%;
+  background-color: rgb(0, 169, 157);
+}
+.today-best-deal-section .container {
+  background-color: #ecf0f4;
+}
+.card-bast-deal-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-item-13 {
+  background-image: url(https://motta.uix.store/electronic/wp-content/uploads/sites/6/2023/03/homev8-stbd03.jpg);
+}
+.img-item-14 {
+  background-image: url(https://motta.uix.store/electronic/wp-content/uploads/sites/6/2023/03/homev8-stbd04.jpg);
+}
+.categories-section .col-lg-2 .card {
+  background-color: #ecf0f4;
+  border-radius: 15px;
+}
+.categories-section .col-lg-2 .card:hover {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+}
+section .img-item-15 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-83.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-16 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1.jpg?resize=600%2C600&ssl=1);
+}
+section .img-item-17 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-4.jpg?resize=300%2C300&ssl=1);
+}
+section .img-item-18 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1.jpeg?resize=300%2C300&ssl=1);
+}
+section .img-item-19 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-9.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-20 {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-3.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-15:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-73.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-16:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-17:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/4-5.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-18:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2.jpeg?resize=300%2C300&ssl=1);
+}
+.img-item-19:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-9.jpg?resize=300%2C300&ssl=1);
+}
+.img-item-20:hover {
+  background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-1.jpg?resize=300%2C300&ssl=1);
+}
+.stars li {
+  color: #fcb900;
+}
+.text-star-color {
+  color: rgb(170, 167, 167);
+}
+.trending-logo-section .col-6 {
+  cursor: pointer;
+}
+.help-center-section .container {
+  background-color: #ecf0f4;
+}
+section a {
+  text-decoration: none;
+  color: black;
+}
+.contact-section a:hover {
+  border-bottom: 2px solid black;
+}
+.contact-section input {
+  background-color: #ecf0f4;
+}
+.contact-section .btn-1 {
+  background-color: black;
+  color: white;
+}
+.contact-section .btn-1:hover {
+  background-color: black;
+  color: white;
+}
+footer a:hover {
+  border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 992px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body .container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .search-bar {
+    background-color: #ecf0f4;
+  }
+  .search-bar input {
+    background-color: #ecf0f4;
+  }
+  body ul {
+    list-style-type: none;
+  }
+  .text-size {
+    font-size: 13px;
+  }
+  body li {
+    cursor: pointer;
+  }
+  header .container {
+    height: 100%;
+  }
+  .inside-nav {
+    height: 100%;
+  }
+  .navbar .navbar-left {
+    height: 60px;
+  }
+  ul li img {
+    width: 16px;
+  }
+  .elemonter-section .elemonter-item {
+    height: 60px;
+  }
+  .elemonter-section .elemonter-item .text-area {
+    font-size: 11px;
+  }
+  .elemonter-section .elemonter-item .text-area h6 {
+    font-size: 11px;
+  }
+  .item-1 a {
+    text-decoration: none;
+    color: #d1005e;
+  }
+  .item-2 a {
+    text-decoration: none;
+    color: blue;
+  }
+  .item-3 a {
+    text-decoration: none;
+    color: black;
+  }
+  .eletoric-item ul li {
+    color: rgb(104, 104, 104);
+  }
+  .eletoric-item ul li:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .main-section .img-about {
+    max-height: 562px;
+  }
+  .carousel-caption .col-md-4 {
+    padding-top: 20%;
+  }
+  .carousel-caption .col-md-4 .h3 {
+    text-wrap: nowrap;
+  }
+  .button-div a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  body .btn-1 {
+    width: 120px;
+    height: 40px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    text-align: center;
+    padding-top: 13px;
+    box-shadow: 0 2px 6px 0 rgba(29, 33, 40, 0.16);
+  }
+  .student-deal-section .circle-1 {
+    background-color: #dadfe3;
+    right: 94%;
+  }
+  .student-deal-section .circle-2 {
+    background-color: white;
+    left: 95%;
+  }
+  .student-deal .h3 {
+    color: #761bcc;
+    font-weight: 700;
+    transform: rotate(350deg);
+  }
+  section .img-item {
+    width: 100%;
+    height: 23vh;
+    background-size: cover;
+    background-position: center;
+  }
+  section .img-item-1 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-56.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-2 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-2.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-3 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-6-1.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-4 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-10.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-5 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-15.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-1:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-46.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-2:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-3.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-3:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-6-1.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-4:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-4.jpg?resize=300%2C300&ssl=1);
+  }
+  .student-deal-section .h6 {
+    font-size: 13px;
+  }
+  .card .logo-sale {
+    width: 50px;
+    height: 25px;
+    font-size: 14px;
+  }
+  .card .logo-1 {
+    background-color: #ff7316;
+  }
+  .card .logo-2 {
+    background-color: #ff311c;
+  }
+  .card-body .item-flex img {
+    width: 20px;
+    height: 20px;
+  }
+  .card .img-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  .card .img-item {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    transition: all 0.2s ease;
+    opacity: 0;
+  }
+  .img-overlay:hover .overlay {
+    opacity: 1;
+  }
+  .overlay ul {
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    transform: translateY(20px);
+    height: 43vh;
+    padding-top: 0%;
+    padding-left: 60%;
+  }
+  .overlay .btn-1 {
+    top: 90%;
+    left: 0%;
+    width: 100%;
+    position: absolute;
+  }
+  .overlaybottom {
+    width: 100%;
+    height: 26vh;
+    bottom: 0px;
+    left: 0px;
+  }
+  .overlay ul li a {
+    color: gray;
+  }
+  .overlay ul li a:hover {
+    color: black;
+  }
+
+  .labor-deal .labor {
+    font-weight: 700;
+    width: 80%;
+    background-color: rgb(0, 0, 255);
+  }
+  .labor-deal .sale-deal {
+    font-weight: 700;
+    width: 50%;
+    background-color: rgb(0, 169, 157);
+  }
+  .today-best-deal-section {
+    background-color: #ecf0f4;
+  }
+  .card-bast-deal-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .img-item-13 {
+    background-image: url(https://motta.uix.store/electronic/wp-content/uploads/sites/6/2023/03/homev8-stbd03.jpg);
+  }
+  .img-item-14 {
+    background-image: url(https://motta.uix.store/electronic/wp-content/uploads/sites/6/2023/03/homev8-stbd04.jpg);
+  }
+  .height-increa {
+    height: 36vh;
+  }
+  .categories-section .overflow-data {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  body .container {
+    max-width: 100%;
+  }
+  header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .search-bar {
+    background-color: #ecf0f4;
+  }
+  .search-bar input {
+    background-color: #ecf0f4;
+  }
+  body ul {
+    list-style-type: none;
+  }
+  .text-size {
+    font-size: 13px;
+  }
+  body li {
+    cursor: pointer;
+  }
+  header .container {
+    height: 100%;
+  }
+  .inside-nav {
+    height: 100%;
+  }
+  .navbar .navbar-left {
+    height: 60px;
+  }
+  ul li img {
+    width: 16px;
+  }
+  .elemonter-section .elemonter-item {
+    height: 60px;
+  }
+  .elemonter-section .elemonter-item .text-area {
+    font-size: 11px;
+  }
+  .elemonter-section .elemonter-item .text-area h6 {
+    font-size: 11px;
+  }
+  .item-1 a {
+    text-decoration: none;
+    color: #d1005e;
+  }
+  .item-2 a {
+    text-decoration: none;
+    color: blue;
+  }
+  .item-3 a {
+    text-decoration: none;
+    color: black;
+  }
+  .eletoric-item ul li {
+    color: rgb(104, 104, 104);
+  }
+  .eletoric-item ul li:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .main-section .img-about {
+    max-height: 562px;
+  }
+  .carousel-caption .col-md-4 {
+    margin-top: 60%;
+    padding-top: 20px;
+    background-color: whitesmoke;
+    height: 100%;
+  }
+  .carousel-caption .col-md-4 .h3 {
+    text-wrap: nowrap;
+  }
+  .button-div a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  body .btn-1 {
+    width: 120px;
+    height: 40px;
+  }
+  .carousel-item {
+    padding-bottom: 220px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    text-align: center;
+    padding-top: 13px;
+    box-shadow: 0 2px 6px 0 rgba(29, 33, 40, 0.16);
+  }
+  .student-deal-section .circle-1 {
+    background-color: #dadfe3;
+    right: 95%;
+  }
+  .student-deal-section .circle-2 {
+    background-color: white;
+    left: 95%;
+  }
+  .student-deal .h3 {
+    color: #761bcc;
+    font-weight: 700;
+    transform: rotate(350deg);
+  }
+  section .img-item {
+    width: 100%;
+    height: 23vh;
+    background-size: cover;
+    background-position: center;
+  }
+  section .img-item-1 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-56.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-2 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-2.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-3 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-6-1.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-4 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-10.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-5 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-15.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-1:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-46.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-2:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-3.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-3:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-6-1.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-4:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-4.jpg?resize=300%2C300&ssl=1);
+  }
+  .student-deal-section .h6 {
+    font-size: 13px;
+  }
+  .card .logo-sale {
+    width: 50px;
+    height: 25px;
+    font-size: 14px;
+  }
+  .card .logo-1 {
+    background-color: #ff7316;
+  }
+  .card .logo-2 {
+    background-color: #ff311c;
+  }
+  .card-body .item-flex img {
+    width: 20px;
+    height: 20px;
+  }
+  .card .img-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  .card .img-item {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    transition: all 0.2s ease;
+    opacity: 0;
+  }
+  .img-overlay:hover .overlay {
+    opacity: 1;
+  }
+  .overlay ul {
+    position: absolute;
+    font-size: 20px;
+    transform: translateY(20px);
+    height: 43vh;
+    padding-top: 0%;
+    padding-left: 60%;
+  }
+  .overlay .btn-1 {
+    top: 90%;
+    left: 0%;
+    position: absolute;
+  }
+  .overlaybottom {
+    width: 100%;
+    height: 26vh;
+    bottom: 0px;
+    left: 0px;
+  }
+  .overlay ul li a {
+    color: gray;
+  }
+  .overlay ul li a:hover {
+    color: black;
+  }
+  .labor-deal .labor {
+    font-weight: 700;
+    width: 80%;
+    background-color: rgb(0, 0, 255);
+  }
+  .labor-deal .sale-deal {
+    font-weight: 700;
+    width: 50%;
+    background-color: rgb(0, 169, 157);
+  }
+  .categories-section .overflow-data {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  header {
+    width: 100%;
+    height: 100%;
+  }
+
+  body .container {
+    max-width: 100%;
+  }
+  .search-bar {
+    background-color: #ecf0f4;
+  }
+  .search-bar input {
+    background-color: #ecf0f4;
+  }
+  body ul {
+    list-style-type: none;
+  }
+  .text-size {
+    font-size: 13px;
+  }
+  body li {
+    cursor: pointer;
+  }
+  header .container {
+    height: 100%;
+  }
+  .inside-nav {
+    height: 100%;
+  }
+  .navbar .navbar-left {
+    height: 60px;
+  }
+  ul li img {
+    width: 16px;
+  }
+  .elemonter-section .elemonter-item {
+    height: 60px;
+  }
+  .elemonter-section .elemonter-item .text-area {
+    font-size: 11px;
+  }
+  .elemonter-section .elemonter-item .text-area h6 {
+    font-size: 11px;
+  }
+  .item-1 a {
+    text-decoration: none;
+    color: #d1005e;
+  }
+  .item-2 a {
+    text-decoration: none;
+    color: blue;
+  }
+  .item-3 a {
+    text-decoration: none;
+    color: black;
+  }
+  .eletoric-item ul li {
+    color: rgb(104, 104, 104);
+  }
+  .eletoric-item ul li:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .main-section .img-about {
+    max-height: 562px;
+  }
+  .carousel-caption .col-md-4 {
+    padding-top: 20%;
+  }
+  .carousel-caption .col-md-4 .h3 {
+    text-wrap: nowrap;
+  }
+  .button-div a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  body .btn-1 {
+    width: 120px;
+    height: 40px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    text-align: center;
+    padding-top: 13px;
+    box-shadow: 0 2px 6px 0 rgba(29, 33, 40, 0.16);
+  }
+  .student-deal-section .circle-1 {
+    background-color: #dadfe3;
+    right: 94%;
+  }
+  .student-deal-section .circle-2 {
+    background-color: white;
+    left: 95%;
+  }
+  .student-deal .h3 {
+    color: #761bcc;
+    font-weight: 700;
+    transform: rotate(350deg);
+  }
+  section .img-item {
+    width: 100%;
+    height: 23vh;
+    background-size: cover;
+    background-position: center;
+  }
+  section .img-item-1 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-56.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-2 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-2.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-3 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-6-1.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-4 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-10.jpg?resize=300%2C300&ssl=1);
+  }
+  section .img-item-5 {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/1-15.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-1:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-46.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-2:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-3.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-3:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-6-1.jpg?resize=300%2C300&ssl=1);
+  }
+  .img-item-4:hover {
+    background-image: url(https://i0.wp.com/motta.uix.store/electronic/wp-content/uploads/sites/6/2022/09/2-4.jpg?resize=300%2C300&ssl=1);
+  }
+  .student-deal-section .h6 {
+    font-size: 13px;
+  }
+  .card .logo-sale {
+    width: 50px;
+    height: 25px;
+    font-size: 14px;
+  }
+  .card .logo-1 {
+    background-color: #ff7316;
+  }
+  .card .logo-2 {
+    background-color: #ff311c;
+  }
+  .card-body .item-flex img {
+    width: 20px;
+    height: 20px;
+  }
+  .card .img-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  .card .img-item {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    transition: all 0.2s ease;
+    opacity: 0;
+  }
+  .img-overlay:hover .overlay {
+    opacity: 1;
+  }
+  .overlay ul {
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    transform: translateY(20px);
+    height: 43vh;
+    padding-top: 0%;
+    padding-left: 60%;
+  }
+  .overlay .btn-1 {
+    top: 90%;
+    left: 0%;
+    width: 100%;
+    position: absolute;
+  }
+  .overlaybottom {
+    width: 100%;
+    height: 26vh;
+    bottom: 0px;
+    left: 0px;
+  }
+  .overlay ul li a {
+    color: gray;
+  }
+  .overlay ul li a:hover {
+    color: black;
+  }
+
+  .labor-deal .labor {
+    font-weight: 700;
+    width: 80%;
+    background-color: rgb(0, 0, 255);
+  }
+  .labor-deal .sale-deal {
+    font-weight: 700;
+    width: 50%;
+    background-color: rgb(0, 169, 157);
+  }
+  .today-best-deal-section {
+    background-color: #ecf0f4;
+  }
+  .card-bast-deal-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .img-item-13 {
+    background-image: url(https://motta.uix.store/electronic/wp-content/uploads/sites/6/2023/03/homev8-stbd03.jpg);
+  }
+  .img-item-14 {
+    background-image: url(https://motta.uix.store/electronic/wp-content/uploads/sites/6/2023/03/homev8-stbd04.jpg);
+  }
+  .height-increa {
+    height: 36vh;
+  }
+}

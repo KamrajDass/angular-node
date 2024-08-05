@@ -10,8 +10,10 @@ const passport = require("passport");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var productRouter = require("./routes/productRouter");
+const cors = require("cors"); // Add this line
 const config = require("./config");
 var app = express();
+app.use(cors()); // Add this line
 // Connect to MongoDB
 const url = config.mongoUrl;
 mongoose

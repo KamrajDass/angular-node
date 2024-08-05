@@ -1,39 +1,42 @@
 var express = require("express");
-var router = express.Router();
+var userRouter = express.Router();
 const bodyParser = require("body-parser");
 const passport = require("passport");
 var User = require("../models/user");
 var authenticate = require("../authenticate");
-router.use(bodyParser.json());
+userRouter.use(bodyParser.json());
 /* GET users listing. */
-router.get("/", function (req, res, next) {
+userRouter.get("/", function (req, res, next) {
   res.send("respond with a resource");
 });
 
-router.post("/signup", async (req, res, next) => {
-  const { username, password } = req.body;
+userRouter.post("/signup", async (req, res, next) => {
+  const { username, password, email, firstname, lastname } = req.body;
   // Check if username and password are provided
   if (!username || !password) {
     return res
       .status(400)
       .json({ success: false, message: "Username and password are required" });
   }
-
-  User.register(new User({ username }), password, (err, user) => {
-    if (err) {
-      return res.status(500).json({ success: false, message: err.message });
-    }
-    passport.authenticate("local")(req, res, () => {
-      var token = authenticate.getToken({ _id: user._id });
-      res.status(200).json({
-        success: true,
-        token: token,
-        message: "Registration successful",
+  User.register(
+    new User({ username, password, email, firstname, lastname }),
+    password,
+    (err, user) => {
+      if (err) {
+        return res.status(500).json({ success: false, message: err.message });
+      }
+      passport.authenticate("local")(req, res, () => {
+        var token = authenticate.getToken({ _id: user._id });
+        res.status(200).json({
+          success: true,
+          token: token,
+          message: "Registration successful",
+        });
       });
-    });
-  });
+    }
+  );
 });
-router.post("/login", async (req, res, next) => {
+userRouter.post("/login", async (req, res, next) => {
   passport.authenticate("local", (err, user, info) => {
     if (err) {
       // Handle authentication errors
@@ -56,7 +59,10 @@ router.post("/login", async (req, res, next) => {
       }
 
       // Successful login
-      var token = authenticate.getToken({ _id: req.user._id });
+      var token = authenticate.getToken({
+        _id: req.user._id,
+        username: req.user.username,
+      });
       res.status(200).json({
         success: true,
         token: token,
@@ -66,7 +72,7 @@ router.post("/login", async (req, res, next) => {
     });
   })(req, res, next);
 });
-router.get("/logout", (req, res) => {
+userRouter.get("/logout", (req, res) => {
   if (req.session) {
     req.session.destroy();
     res.clearCookie("session-id");
@@ -79,4 +85,28 @@ router.get("/logout", (req, res) => {
     });
   }
 });
-module.exports = router;
+
+// Route to check username availability
+userRouter.get("/check-username", async (req, res) => {
+  const username = req.query.username;
+
+  if (!username) {
+    return res
+      .status(400)
+      .json({ message: "Username query parameter is required" });
+  }
+
+  try {
+    const user = await User.findOne({ username });
+
+    if (user) {
+      return res.json({ available: false }); // Username is taken
+    }
+
+    return res.json({ available: true }); // Username is available
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: "Internal server error" });
+  }
+});
+module.exports = userRouter;
